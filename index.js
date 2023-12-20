@@ -29,13 +29,13 @@ const questions = () => {
       type: "input",
       message:
         "Please detail the usage and any other information needed to better understand how to use your application.",
-      name: "installation",
+      name: "usage",
     },
     {
       type: "input",
       message:
         "Please describe what installations are required for your application.",
-      name: "usage",
+      name: "installation",
     },
     {
       type: "input",
