@@ -1,8 +1,8 @@
-# Read Me Generator 
+# Read Me Gen 
 
 ## Description
 
-generate read me files
+the description goes here
 
 ## Table of Contents
 
@@ -13,23 +13,23 @@ generate read me files
 - [Tests](#tests)
 - [Questions](#questions)
 
-## Installation
+## Installation <a name="installation"></a>
+
+the usage will go here
+
+## Usage <a name="usage"></a>
+
+not at the moment
+
+## Contributing <a name="contributing"></a>
 
 none
 
-## Usage
+## Tests <a name="tests"></a>
 
 none
 
-## Contributing
-
-none
-
-## Tests
-
-none
-
-## Questions
+## Questions <a name="questions"></a>
 
 If you have any questions, please reach out via email at: [laura_kessinger@yahoo.com]
 
