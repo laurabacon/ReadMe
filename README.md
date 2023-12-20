@@ -23,7 +23,7 @@ After invoking the node command, answer the questions provided. Those answers wi
 
 ## Contributing
 
-None
+Some content in this project, particularly in code snippets or solutions, may be sourced from Stack Overflow. We deeply appreciate the contributions of the Stack Overflow community.
 
 ## Tests
 
@@ -36,7 +36,7 @@ If you have any questions, please reach out via email at: [lauraebkb@gmail.com]
 GitHub: [laurabacon](https://github.com/laurabacon)
 Repo: [ReadMe](https://github.com/ReadMe)
 
-Video: <video src="Untitled_%20Dec%2020,%202023%2011_49%20AM.mp4" controls title="Title"></video>
+Video: <../../Untitled_ Dec 20, 2023 11_49 AM.webm>
 
 
 Screeshots: ![top](<Screen Shot 2023-12-20 at 11.41.35 AM-1.png>)
