@@ -36,7 +36,7 @@ If you have any questions, please reach out via email at: [lauraebkb@gmail.com]
 GitHub: [laurabacon](https://github.com/laurabacon)
 Repo: [ReadMe](https://github.com/ReadMe)
 
-Video: 
+Video: <video src="Untitled_%20Dec%2020,%202023%2011_49%20AM.mp4" controls title="Title"></video>
 
 
 Screeshots: ![top](<Screen Shot 2023-12-20 at 11.41.35 AM-1.png>)
