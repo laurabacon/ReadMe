@@ -7,6 +7,11 @@ const questions = () => {
   return inquirer.prompt([
     {
       type: "input",
+      message: "What is your github username?",
+      name: "username",
+    },
+    {
+      type: "input",
       message: "What is the name of your GitHub repo?",
       name: "repo-name",
     },
@@ -42,32 +47,57 @@ const questions = () => {
       message: "Please list any tests written for your application.",
       name: "testing",
     },
+    {
+      type: "input",
+      message: "What is your email address?",
+      name: "email",
+    },
   ]);
 };
 
+const gitApi = {
+  async getUser(userResponses) {
+    try {
+      const response = await fetch(`https://api.github.com/users/${userResponses.username}`);
+      if (response.ok) {
+        const data = await response.json();
+        return data;
+      } else {
+        console.log('Request failed. Status:', response.status);
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  }
+};
+
+
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// TODO: Create a function to write README file
+
 async function writeToFile(fileName, data) {
-  try {
+  if (writeToFile) {
     await writeFileAsync(fileName, data);
     console.log("Your README file has been generated!");
-  } catch (error) {
-    console.log("Error has occurred.", error);
+  } else {
+    console.log("Error has occurred.");
   }
-}
+};
 
 async function init() {
-  try {
+  if (init) {
     const userResponses = await questions();
+    const usersInfo = await gitApi.getUser(userResponses);
+    console.log("Github: ", usersInfo);
     const answers = userResponses;
     const readMeInfo = generateMarkdown(answers);
     const fileName = `output/README.md`;
     await writeToFile(fileName, readMeInfo);
-  } catch (error) {
-    console.log(error);
   }
-}
+  else {
+    console.log("error");
+  }
+  };
 
 // Function call to initialize app
 init();

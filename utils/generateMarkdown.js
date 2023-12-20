@@ -1,36 +1,5 @@
-
-
-
-function renderLicenseBadge(license) {
-  if (license) {
-    return `![License](https://img.shields.io/badge/license-${license}-blue.svg)`;
-  } else {
-    return '';
-  }
-}
-
-function renderLicenseLink(license) {
-  if (license) {
-    return `[License](https://opensource.org/licenses/${license})`;
-  } else {
-    return '';
-  }
-}
-
-function renderLicenseSection(license) {
-  if (license) {
-    return `## License
-
-This project is licensed under the ${license} license. ${renderLicenseLink(license)}`;
-  } else {
-    return '';
-  }
-}
-
 function generateMarkdown(data) {
-  return `# ${data.title}
-
-${renderLicenseBadge(data.license)}
+  return `# ${data.title} 
 
 ## Description
 
@@ -53,8 +22,6 @@ ${data.installation}
 
 ${data.usage}
 
-${renderLicenseSection(data.license)}
-
 ## Contributing
 
 ${data.contributing}
@@ -65,9 +32,10 @@ ${data.testing}
 
 ## Questions
 
-If you have any questions, please reach out to the creator.
+If you have any questions, please reach out via email at: [${data['email']}]
 
-GitHub: [${data['repo-name']}](https://github.com/${data['repo-name']})`}
+GitHub: [${data['username']}](https://github.com/${data['username']})
+Repo: [${data['repo-name']}](https://github.com/${data['repo-name']})`}
 
 
 
