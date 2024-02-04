@@ -1,8 +1,8 @@
-# Read Me Generator 
+# E-commerce-Back-End 
 
 ## Description
 
-This project is designed to generate high quality ReadMe file for future applications and projects. After invoking the node command, the user is prompted with several short questions. Those answers will be generated into a read me file located in the 'output' folder.
+In this project, I have created the database and routes for an E-commerce store.
 
 ## Table of Contents
 
@@ -15,23 +15,23 @@ This project is designed to generate high quality ReadMe file for future applica
 
 ## Installation
 
-After invoking the node command, answer the questions provided. Those answers will be loaded into your ReadMe file automatically at the end of the questions.
+Node, Express, nysql2, and sequilize are needed within the project to run.
 
 ## Usage
 
-node, inquirer
+After creating the database, seed the data with node seeds/index.js, then you can hit the routes in insomnia.
 
 ## Contributing
 
-Some content in this project, particularly in code snippets or solutions, may be sourced from Stack Overflow. We deeply appreciate the contributions of the Stack Overflow community.
+None
 
 ## Tests
 
-No tests have been written
+None
 
 ## Questions
 
-If you have any questions, please reach out via email at: [lauraebkb@gmail.com]
+If you have any questions, please reach out via email at: [laura_kessinger@yahoo.com]
 
 GitHub: [laurabacon](https://github.com/laurabacon)
-Repo: [ReadMe](https://github.com/ReadMe)
+Repo: [E-commerce-Back-End](https://github.com/E-commerce-Back-End)
